@@ -7,7 +7,13 @@
     <title>お薦めの旅行先</title>
 </head>
 
-<body>
+<body>    
+    <h2>BMI指標計算</h2>
+    <form oninput="bmi.value = Math.round(Number(weight.value)/Math.pow(Number(height.value)/100,2)*10)/10">
+        <p><label>体重(kg):<input name="weight" type="number" step="any"></label></p>
+        <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+        <p><label>BMI : <output name="bmi"></output></label></p>
+    </form>
     <img src="https://t3.ftcdn.net/jpg/00/91/60/56/240_F_91605681_MWuTmRs0e3aSQE0UV3SgDyO28XOEV5Ci.jpg" width="400"
         height="200" alt="平城京"><br>
     <h3>平城京</h3>
